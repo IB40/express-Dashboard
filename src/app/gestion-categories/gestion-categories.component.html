@@ -1,0 +1,108 @@
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <h2 style="text-align: justify;">Gestion Catégorie</h2>
+
+    <ul class="navbar-nav">
+      
+      
+    </ul>
+
+    <!-- SEARCH FORM -->
+   
+  </nav>
+
+  
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel pb-3 mb-3 d-flex" >
+        <div class="image" style="margin: 0 auto; " >
+          <img src="assets/img/user2-160x160.jpg" class="img-circle elevation-2 " alt="User Image" style="width: 100px;">
+        </div>
+      </div>
+        <div>
+          <a href="#" class="d-block" 
+          style="text-align: center;">Tonton ib </a>
+        </div>
+
+      <!-- Sidebar Menu -->
+      <button class="btn btn-light" routerLink="/accueil" style="border-radius: 40px; margin: 5%; width: 90%;">Acceuil</button>
+      <button class="btn btn-light" routerLink="/gestionAdmin" style="border-radius: 40px; margin: 5%; width: 90%;">Gestion Admin</button>
+      <button class="btn btn-light" routerLink="/gestionCategories" style="border-radius: 40px; margin: 5%; width: 90%;">Gestion Catégories</button>
+      <button class="btn btn-light" routerLink="/gestionArticles" style="border-radius: 40px; margin: 5%; width: 90%;">Gestion Article</button>
+      <button class="btn btn-light" routerLink="/gestionCommandes" style="border-radius: 40px; margin: 5%; width: 90%;">Gestion Commande</button>
+      <button class="btn btn-warning" style="border-radius: 40px; margin: 5%; width: 90%;">Déconnecter</button>
+
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    
+    <section class="content" style="max-width: 100%;">
+      <div class="container-fluid">
+        
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <div class="col-md-8" style="max-width: 100%;">
+            
+              <div>
+                  <button routerLink="/modifierCategorie" style="margin-left: 1000px;background-color: chocolate;
+                  border-radius: 50PX; margin-top: 20PX;">Ajouter</button>
+              </div>
+            <!-- TABLE: Dernières commandes -->
+            <div class="table-responsive">
+              <table class="table no-wrap">
+                  <thead>
+                      <tr>
+                          
+                          <th class="border-top-0"><b>ID</b></th>
+                          <th class="border-top-0"><b>NOM CATEGORIE</b></th>
+                         
+                          <th class="border-top-0"><b>ACTION</b></th>
+
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          
+                          <td class="txt-oflo">adou</td>
+                          <td class="txt-oflo">adou</td>
+                        
+                          
+                          
+                          <td>
+                              <span class="text-success alignement">
+                                  <a routerLink="/modifierCategorie"> <i class="fa fa-edit" aria-hidden="true"></i></a>&nbsp;
+                                  <a><i style="color: red;" class="fa fa-trash" aria-hidden="true"></i></a>&nbsp;
+                                  <a [routerLink]="['/detailAdmin']" ><i style="color: #03224c;" class="fas fa-info-circle" aria-hidden="true"></i></a>
+                              </span>
+                          </td>
+                      </tr>
+
+                   
+                  </tbody>
+              </table>
+          </div>
+
+        
+
+         
+
+         
+         
+    
+ 
+  
+
+
+<router-outlet></router-outlet>
