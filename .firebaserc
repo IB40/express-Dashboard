@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "express-market-57a5f": {
+      "hosting": {
+        "express-Dashboard": [
+          "express-market-57a5f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "express-market-57a5f"
+  }
+}

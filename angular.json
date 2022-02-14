@@ -98,6 +98,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "express-Dashboard:build:production",
+            "firebaseProject": "express-market-57a5f",
+            "firebaseHostingSite": "express-market-57a5f"
+          }
         }
       }
     }
